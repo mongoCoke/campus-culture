@@ -1,0 +1,164 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+}
+body{
+    font-size:14px;
+    color:#333;
+}
+.banner-top .navigation{
+  background-color:#021523;
+}
+.navbar.navbar-default{
+  background:none;
+  border:none;
+}
+.glyphicon{
+    color:#fff;
+    font-size:30px;
+    margin-right:10px;
+}
+.container h1,
+.container h4{
+    color:#fff;
+}
+.container h1{
+    display:inline-block;
+}
+.navbar-default .navbar-nav > li > a{
+    color:#fff;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+    color:red;
+}
+.banner-top .carousel .carousel-inner img{
+    width:100%;
+    height:500px;
+    /* background:url('../img/1.jpg') no-repeat 0px 0px;
+    background-size:cover;
+    min-height:700px; */
+}
+/* about */
+
+.about{
+    margin-top:50px;
+}
+.about .about-left-img{
+    background:url('../img/2.jpg') no-repeat center;
+    height:640px;
+    background-size:cover;
+}
+@media (max-width:1000px){
+    .about .about-left-img{
+        width:550px;
+        height:550px;
+    }
+}
+/* photos */
+#gallery{
+    padding-top:20px;
+}
+#gallery .heading{
+     text-align:center;
+}
+#gallery .heading h3{
+    font-size:30px;
+    font-weight:bolder;
+    line-height:100px;
+}
+#gallery .inner .box{
+    position:relative;
+    padding:0;
+}
+#gallery .inner .box img{
+    width:100%;    
+}
+#gallery .inner .box .textBox{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:aqua;
+    transform:scale(0);
+    transition:all 0.7s ease;
+    opacity:0.7;
+    text-align:center;
+}
+#gallery .inner .box:hover .textBox{
+    transform:scale(1);
+}
+#gallery .inner .box .textBox p{
+    font-size:30px;
+    color:#fff;
+    opacity:1;
+    margin-top:25%;
+    background-color:#000;
+}
+#gallery::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/* contact */
+
+.footer{    
+    padding-top:200px;  
+    width:100%;
+    height:400px;
+    background:url('../img/6.jpg') no-repeat;
+    background-size:cover;
+    background-position:50% 50%;
+}
+.cam{
+    text-align:center;
+}
+.cam a span{
+    font-size:30px;
+    font-weight:700;
+}
+.social{
+    text-align:center;
+}
+.social ul li{
+    display:inline-block;
+    margin:20px;    
+}
+.social ul li a{
+    display:block;
+    width:30px;
+    height:30px;
+    background:#fff;
+    text-align:center;
+}
+.social ul li a:hover{
+    opacity:0.6;
+}
+.social ul li span{
+    font-size:15px;
+    line-height:30px;
+    margin-left:25%;
+}
+.social ul li:nth-of-type(1) a span{
+    color:purple;
+}
+.social ul li:nth-of-type(2) a span{
+    color:blue;
+}
+.social ul li:nth-of-type(3) a span{
+    color:red;
+}
+.social ul li:nth-of-type(4) a span{
+    color:orange;
+}
+.copy-right p{
+    color:#fff;
+    line-height:30px;
+    text-align:center;
+}
